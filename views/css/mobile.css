@@ -1,0 +1,23 @@
+
+@media (min-width: 13em) and (orientation: portrait) {	/* iPhone 4 & 5 320px */
+
+}
+@media (min-width: 15em) and (orientation: portrait){ /* iPhone 6 & 6+ 375px */
+
+}
+@media (min-width: 20em) and (orientation: landscape) {  /* iPhone 4 & 5 480px */
+
+
+}
+@media (min-width: 26em) and (orientation: landscape) { /* iPhone 6 & 6+ 640px */
+
+
+}
+@media (min-width: 32em) { /* tablets, small laptop 768px */
+
+}
+@media (min-width: 50em) { /* large laptop, desktop 1200px */
+
+
+}
+
