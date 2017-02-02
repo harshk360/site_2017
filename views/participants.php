@@ -81,7 +81,7 @@
                 <div class="col-sm-2">
                     <div class="form-group form-group-lg">
                     <div class="btn-group" data-toggle="buttons">
-                    <label id="label-female" class="btn btn-radio-toggle active"><input type="radio" class="form-control" name="gender" id="female" checked value="female">Female</label>
+                    <label id="label-female" class="btn btn-radio-toggle"><input type="radio" class="form-control" name="gender" id="female" checked value="female">Female</label>
                     <label id="label-male" class="btn btn-radio-toggle"><input type="radio" class="form-control" name="gender" id="male" value="male">Male</label>
                     </div>
                     </div>
