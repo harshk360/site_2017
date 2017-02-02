@@ -32,7 +32,7 @@
             <div class="row"></div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-<?  if ($PARTICIPANT_SIGNUPS_OPEN==true) { 
+<?  if ($PARTICIPANT_SIGNUPS_OPEN==true) {
         if($participants_query->num_rows < $MAX_PARTICIPANTS) {
 ?>
                     <h2>Participant <span class="highlight">Sign Up</span></h2>
@@ -118,7 +118,7 @@
                             <option value="Industrial">Industrial Engineering</option>
                             <option value="MatSE">Material Science and Engineering</option>
                             <option value="MechE">Mechanical Engineering</option>
-                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option> 
+                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option>
                         </select>
                     </div>
                 </div>
@@ -223,20 +223,20 @@
                     <div class="form-group form-group-lg">
                         <select class="form-control" name="tour1" id="tour1" value="">
                             <option value="" selected disabled>1st Department Tour Preference</option>
-                            <option value="AeroE">Aerospace Engineering</option> 
-                            <option value="Agricultural">Agricultural and Biological Engineering</option> 
-                            <option value="BioE">Bioengineering</option> 
-                            <option value="ChemE">Chemical and Biomolecular Engineering</option> 
-                            <option value="Civil">Civil and Environmental Engineering</option> 
-                            <option value="CompE">Computer Engineering</option> 
-                            <option value="CompSci">Computer Science</option> 
-                            <option value="Electrical">Electrical Engineering</option> 
-                            <option value="EngPhysics">Engineering Physics</option> 
-                            <option value="General">General Engineering</option> 
+                            <option value="AeroE">Aerospace Engineering</option>
+                            <option value="Agricultural">Agricultural and Biological Engineering</option>
+                            <option value="BioE">Bioengineering</option>
+                            <option value="ChemE">Chemical and Biomolecular Engineering</option>
+                            <option value="Civil">Civil and Environmental Engineering</option>
+                            <option value="CompE">Computer Engineering</option>
+                            <option value="CompSci">Computer Science</option>
+                            <option value="Electrical">Electrical Engineering</option>
+                            <option value="EngPhysics">Engineering Physics</option>
+                            <option value="General">General Engineering</option>
                             <option value="Industrial">Industrial Engineering</option>
-                            <option value="MatSE">Material Science and Engineering</option> 
-                            <option value="MechE">Mechanical Engineering</option> 
-                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option> 
+                            <option value="MatSE">Material Science and Engineering</option>
+                            <option value="MechE">Mechanical Engineering</option>
+                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option>
                         </select>
                     </div>
                 </div>
@@ -244,20 +244,20 @@
                     <div class="form-group form-group-lg">
                         <select class="form-control" name="tour2" id="tour2" value="">
                             <option value="" selected disabled>2nd Department Tour Preference</option>
-                            <option value="AeroE">Aerospace Engineering</option> 
-                            <option value="Agricultural">Agricultural and Biological Engineering</option> 
-                            <option value="BioE">Bioengineering</option> 
-                            <option value="ChemE">Chemical and Biomolecular Engineering</option> 
-                            <option value="Civil">Civil and Environmental Engineering</option> 
-                            <option value="CompE">Computer Engineering</option> 
-                            <option value="CompSci">Computer Science</option> 
-                            <option value="Electrical">Electrical Engineering</option> 
-                            <option value="EngPhysics">Engineering Physics</option> 
-                            <option value="General">General Engineering</option> 
+                            <option value="AeroE">Aerospace Engineering</option>
+                            <option value="Agricultural">Agricultural and Biological Engineering</option>
+                            <option value="BioE">Bioengineering</option>
+                            <option value="ChemE">Chemical and Biomolecular Engineering</option>
+                            <option value="Civil">Civil and Environmental Engineering</option>
+                            <option value="CompE">Computer Engineering</option>
+                            <option value="CompSci">Computer Science</option>
+                            <option value="Electrical">Electrical Engineering</option>
+                            <option value="EngPhysics">Engineering Physics</option>
+                            <option value="General">General Engineering</option>
                             <option value="Industrial">Industrial Engineering</option>
-                            <option value="MatSE">Material Science and Engineering</option> 
-                            <option value="MechE">Mechanical Engineering</option> 
-                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option> 
+                            <option value="MatSE">Material Science and Engineering</option>
+                            <option value="MechE">Mechanical Engineering</option>
+                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option>
                         </select>
                     </div>
                 </div>

@@ -136,52 +136,46 @@ $(function () {
   var context = {
   dates:[
   {
-    title: "Early admission decisions sent out",
-    date: "December 16",
-    bcolor: "blue",
-    liClass: ""
-  },
-  {
-    title: "Early SITE invitations sent out",
-    date: "January 16",
-    bcolor: "red",
-    liClass: "timeline-inverted"
-  },
-  {
     title: "Regular admission decisions sent out",
     date: "February 3",
     bcolor: "blue",
     liClass: ""
   },
   {
-    title: "Regular SITE invitations sent out, registration opens",
-    date: "February 10",
+    title: "SITE invitations sent out",
+    date: "February 16",
     bcolor: "red",
     liClass: "timeline-inverted"
+  },
+  {
+    title: "Registration opens",
+    date: "February 20",
+    bcolor: "blue",
+    liClass: ""
   },
   {
     title: "Participant registration and waitlist closes",
     date: "March 11",
-    bcolor: "blue",
-    liClass: ""
+    bcolor: "red",
+    liClass: "timeline-inverted"
   },
   {
     title: "Payment and permission slip due",
     date: "March 31",
-    bcolor: "red",
-    liClass: "timeline-inverted"
-  },
-  {
-    title: "UIUC Spring Break",
-    date: "March 18 - March 26",
     bcolor: "blue",
     liClass: ""
   },
   {
-    title: "SITE", //(ﾉ^▽^)ﾉ
-    date: "April 13 - April 15",
+    title: "UIUC Spring Break",
+    date: "March 18 - March 26",
     bcolor: "red",
     liClass: "timeline-inverted"
+  },
+  {
+    title: "SITE", //(ﾉ^▽^)ﾉ
+    date: "April 13 - April 15",
+    bcolor: "blue",
+    liClass: ""
   }
   ]};
 

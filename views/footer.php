@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        Copyright &copy; SITE 2016
+                        Copyright &copy; SITE 2017
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-      
+
 
 </body>
 </html>
