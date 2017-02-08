@@ -51,6 +51,12 @@ $('#volunteerForm').validate({
         'multiHost': {
             required: true,
         },
+        'activity1': {
+            required: true,
+        },
+        'activity2': {
+            required: true,
+        },
         'interests': {
             required: true,
         }

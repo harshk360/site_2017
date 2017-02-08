@@ -253,6 +253,8 @@ $(document).ready(function(){
                 { data: 'housing' },
                 { data: 'pastAttendee' },
                 { data: 'multiHost' },
+                { data: 'activity1' },
+                { data: 'activity2' },
                 { data: 'engineeringSociety' },
                 { data: 'interests' }
         ],

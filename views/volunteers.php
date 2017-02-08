@@ -258,7 +258,7 @@
                             <option value="Industrial">Industrial Engineering</option>
                             <option value="MatSE">Material Science and Engineering</option>
                             <option value="MechE">Mechanical Engineering</option>
-                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option> 
+                            <option value="Nuclear">Nuclear, Plasma, and Radiological Engineering</option>
                         </select>
                     </div>
                 </div>
@@ -283,24 +283,55 @@
                 </div>
                 </div>
                 <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group form-group-lg">
-                    <p>Did you attend SITE as a prospective student?</p>
-                    <div class="btn-group" data-toggle="buttons">
-                    <label id="label-pastSite-yes" class="btn btn-radio-toggle active"><input type="radio" name="pastSite" id="pastSite-yes" checked value="yes">Yes</label>
-                    <label id="label-pastSite-no" class="btn btn-radio-toggle"><input type="radio" name="pastSite" id="pastSite-no" value="no">No</label>
+                    <div class="col-sm-6">
+                        <div class="form-group form-group-lg">
+                        <p>Did you attend SITE as a prospective student?</p>
+                        <div class="btn-group" data-toggle="buttons">
+                        <label id="label-pastSite-yes" class="btn btn-radio-toggle active"><input type="radio" name="pastSite" id="pastSite-yes" checked value="yes">Yes</label>
+                        <label id="label-pastSite-no" class="btn btn-radio-toggle"><input type="radio" name="pastSite" id="pastSite-no" value="no">No</label>
+                        </div>
+                        </div>
                     </div>
+                    <div class="col-sm-6">
+                        <div class="form-group form-group-lg">
+                        <p>Would you be willing <i>and</i> able to host 2 students?</p>
+                        <div class="btn-group" data-toggle="buttons">
+                        <label id="label-multiHost-yes" class="btn btn-radio-toggle active"><input type="radio" name="multiHost" id="multiHost-yes" checked value="yes">Yes</label>
+                        <label id="label-multiHost-no" class="btn btn-radio-toggle"><input type="radio" name="multiHost" id="multiHost-no" value="no">No</label>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group form-group-lg">
-                    <p>Would you be willing <i>and</i> able to host 2 students?</p>
-                    <div class="btn-group" data-toggle="buttons">
-                    <label id="label-multiHost-yes" class="btn btn-radio-toggle active"><input type="radio" name="multiHost" id="multiHost-yes" checked value="yes">Yes</label>
-                    <label id="label-multiHost-no" class="btn btn-radio-toggle"><input type="radio" name="multiHost" id="multiHost-no" value="no">No</label>
+                <div class="row">
+                    <div class="col-sm-12"><p>What activities would you like to do with the student you host?</p></div>
+                    <div class="col-sm-5">
+                        <div class="form-group form-group-lg">
+                            <select class="form-control" name="activity1" id="activity1" value="">
+                                <option value="" selected disabled>1st Activity Preference</option>
+                                <option value="Dessert">Walking through Campustown and grabbing dessert</option>
+                                <option value="Spectate">Watching a sporting event</option>
+                                <option value="Observatory">Visiting the observatory in the evening</option>
+                                <option value="ArcSports">Playing sports at the ARC recreation center</option>
+                                <option value="CrceSwimming">Going swimming in the CRCE recreation center</option>
+                                <option value="StayingIn">Staying in, enjoying a movie or playing video/board games</option>
+                                <option value="LiveShow">Seeing a live performance or live music</option>
+                            </select>
+                        </div>
                     </div>
+                    <div class="col-sm-5">
+                        <div class="form-group form-group-lg">
+                            <select class="form-control" name="activity2" id="activity2" value="">
+                                <option value="" selected disabled>2nd Activity Preference</option>
+                                <option value="Dessert">Walking through Campustown and grabbing dessert</option>
+                                <option value="Spectate">Watching a sporting event</option>
+                                <option value="Observatory">Visiting the observatory in the evening</option>
+                                <option value="ArcSports">Playing sports at the ARC recreation center</option>
+                                <option value="CrceSwimming">Going swimming in the CRCE recreation center</option>
+                                <option value="StayingIn">Staying in, enjoying a movie or playing video/board games</option>
+                                <option value="LiveShow">Seeing a live performance or live music</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="row">
                 <div class="col-sm-12"><p>If you are fulfilling an EC obligation, which society (list one) are you representing?</p></div>
@@ -324,7 +355,7 @@
                 </div>
                 </form>
             </div>
-<?  } 
+<?  }
     else {?>
                     <h3>Registration for SITE <? echo $SITE_YEAR ?> is currently closed. Check back again soon.</h3>
                 </div>

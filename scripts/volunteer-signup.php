@@ -36,6 +36,10 @@
         $errors['pastSite'] = 'Past SITE Attendee is required.';
     if (empty($_POST['multiHost']))
         $errors['multiHost'] = 'Ability to host multiple students is required.';
+    if (empty($_POST['activity1']))
+        $errors['activity1'] = '1st activity preference is required.';
+    if (empty($_POST['activity2']))
+        $errors['activity2'] = '2nd activity preference is required.';
 
     // Validate the reCaptcha
     $reCaptcha = new ReCaptcha($privateKey);
@@ -51,7 +55,7 @@
 
     if (empty($errors)) {
 
-            // Variables from the form 
+            // Variables from the form
             $firstName  = $_POST['firstName'];
             $lastName   = $_POST['lastName'];
             $netId      = $_POST['netid'];
@@ -66,6 +70,8 @@
             $housing    = $_POST['housing'];
             $pastSite   = $_POST['pastSite'];
             $multiHost  = $_POST['multiHost'];
+            $activity1  = $_POST['activity1'];
+            $activity2  = $_POST['activity2'];
             $engSoc     = $_POST['eng-soc'];
             $interests  = $_POST['interests'];
 
@@ -83,13 +89,15 @@
             $housing    = mysqli_real_escape_string($connect_site, stripslashes($housing));
             $pastSite   = mysqli_real_escape_string($connect_site, stripslashes($pastSite));
             $multiHost  = mysqli_real_escape_string($connect_site, stripslashes($multiHost));
+            $activity1  = mysqli_real_escape_string($connect_site, stripslashes($activity1));
+            $activity2  = mysqli_real_escape_string($connect_site, stripslashes($activity2));
             $engSoc     = mysqli_real_escape_string($connect_site, stripslashes($engSoc));
             $interests  = mysqli_real_escape_string($connect_site, stripslashes($interests));
 
             $ip         = $_SERVER['REMOTE_ADDR'];
 
             // Insert volunteer into table
-            $post_query = mysqli_query($connect_site,"INSERT INTO volunteers (firstName, lastName, netId, phone, gender, homeCity, homeState, homeCountry, year, major, minor, housing, pastAttendee, multiHost, engineeringSociety, interests, ip) VALUES ('$firstName', '$lastName', '$netId', '$phone', '$gender','$city', '$state', '$country', '$year', '$major', '$minor','$housing', '$pastSite', '$multiHost', '$engSoc', '$interests','$ip') ") or die("Unable to insert volunteer. " . mysqli_error($connect_site));
+            $post_query = mysqli_query($connect_site,"INSERT INTO volunteers (firstName, lastName, netId, phone, gender, homeCity, homeState, homeCountry, year, major, minor, housing, pastAttendee, multiHost, activity1, activity2, engineeringSociety, interests, ip) VALUES ('$firstName', '$lastName', '$netId', '$phone', '$gender','$city', '$state', '$country', '$year', '$major', '$minor','$housing', '$pastSite', '$multiHost', '$activity1', '$activity2', '$engSoc', '$interests','$ip') ") or die("Unable to insert volunteer. " . mysqli_error($connect_site));
             $data['success'] = true;
             $data['message'] = 'Volunteer added successfully.';
 
@@ -110,11 +118,11 @@
                 SITE Committee<br>Engineering Council<br>University of Illinois at Urbana-Champaign
                 <br><br>
                 If you believe you have received this email in error, please contact " . $WEBMASTER[0] . " at " . $WEBMASTER[1];
-            if(!$volunteerMail->send()) 
+            if(!$volunteerMail->send())
             {
                 $errors['email'] = "Mailer Error: " . $volunteerMail->ErrorInfo . " Please contact " . $WEBMASTER[1] . ".";
-            } 
-            else 
+            }
+            else
             {
                  $data['message'] .= " Thank you! A confirmation email has been sent to your Illinois email address.";
             }
@@ -135,11 +143,11 @@
                 Name: " . $firstName . " " . $lastName  . "<br>
                 Email: " . $netId . "@illinois.edu<br>
                 IP Address: " . $ip . "
-                <br><br>" . 
+                <br><br>" .
                 json_encode($_POST) . "
-                <br><br><br> 
+                <br><br><br>
                 SITE Committee<br>Engineering Council<br>University of Illinois at Urbana-Champaign";
-            if(!$volWebMail->send()) 
+            if(!$volWebMail->send())
             {
                 echo "Mailer Error: " . $volWebMail->ErrorInfo . " Please contact " . $WEBMASTER[1] . ".";
             }

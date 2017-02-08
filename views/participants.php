@@ -278,7 +278,7 @@
                 <div class="col-sm-5">
                     <div class="form-group form-group-lg">
                         <select class="form-control" name="activity2" id="activity2" value="">
-                            <option value="" selected disabled>1st Activity Preference</option>
+                            <option value="" selected disabled>2nd Activity Preference</option>
                             <option value="Dessert">Walking through Campustown and grabbing dessert</option>
                             <option value="Spectate">Watching a sporting event</option>
                             <option value="Observatory">Visiting the observatory in the evening</option>

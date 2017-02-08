@@ -195,8 +195,10 @@
                 <!--12--><th>Housing</th>
                 <!--13--><th>Past Attendee</th>
                 <!--14--><th>Multi-Host</th>
-                <!--15--><th>EC Obligation</th>
-                <!--16--><th>Interests</th>
+                <!--15--><th>Activity 1</th>
+                <!--16--><th>Activity 2</th>
+                <!--17--><th>EC Obligation</th>
+                <!--18--><th>Interests</th>
                 </tr></thead>
 
                 <tbody>
@@ -222,6 +224,8 @@
                     <td><? echo $vRow['housing']; ?></td>
                     <td><? echo $vRow['pastAttendee']; ?></td>
                     <td><? echo $vRow['multiHost']; ?></td>
+                    <td><? echo $vRow['activity1']; ?></td>
+                    <td><? echo $vRow['activity2']; ?></td>
                     <td><? echo $vRow['engineeringSociety']; ?></td>
                     <td><? echo $vRow['interests']; ?></td>
                     </tr>
