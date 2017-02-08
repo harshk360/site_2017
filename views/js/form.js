@@ -1,6 +1,6 @@
-$.validator.addMethod("regex", function(value, element, regexpr) {          
+$.validator.addMethod("regex", function(value, element, regexpr) {
  return regexpr.test(value);
-}, "Invalid expression."); 
+}, "Invalid expression.");
 
 
 $('#volunteerForm').validate({
@@ -178,6 +178,12 @@ $('#participantForm').validate({
             required: true,
         },
         'tour2': {
+            required: true,
+        },
+        'activity1': {
+            required: true,
+        },
+        'activity2': {
             required: true,
         },
         'interests': {

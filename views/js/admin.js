@@ -18,7 +18,7 @@ $(document).ready(function(){
         "order": [[ 2, "asc" ]],
         "colReorder": true,
         "columnDefs": [
-          { "visible": false, "targets": [0, 6, 7, 10, 11, 12, 13, 14, 15, 24, 25] }
+          { "visible": false, "targets": [0, 6, 7, 10, 11, 12, 13, 14, 15, 26, 27] }
         ],
         "columns": [
                 { data: 'id' },
@@ -45,6 +45,8 @@ $(document).ready(function(){
                 { data: 'major' },
                 { data: 'tour1' },
                 { data: 'tour2' },
+                { data: 'activity1' },
+                { data: 'activity2' },
                 { data: 'interests' },
                 { data: 'hopes' }
         ],
@@ -110,7 +112,7 @@ $(document).ready(function(){
         "order": [[ 26, "asc" ]],
         "colReorder": true,
         "columnDefs": [
-          { "visible": false, "targets": [0, 6, 7, 10, 11, 12, 13, 14, 15, 16, 19, 24, 25] }
+          { "visible": false, "targets": [0, 6, 7, 10, 11, 12, 13, 14, 15, 16, 19, 26, 27] }
         ],
         "columns": [
                 { data: 'id' },
@@ -137,6 +139,8 @@ $(document).ready(function(){
                 { data: 'major' },
                 { data: 'tour1' },
                 { data: 'tour2' },
+                { data: 'activity1' },
+                { data: 'activity2' },
                 { data: 'interests' },
                 { data: 'hopes' },
                 { data: 'creationDate' }

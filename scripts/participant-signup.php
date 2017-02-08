@@ -48,6 +48,10 @@
         $errors['tour1'] = 'Tour preference 1 is required.';
     if (empty($_POST['tour2']))
         $errors['tour2'] = 'Tour preference 2 is required.';
+    if (empty($_POST['activity1']))
+        $errors['activity1'] = 'Activity preference 1 is required.';
+    if (empty($_POST['activity2']))
+        $errors['activity2'] = 'Activity preference 2 is required.';
     if (empty($_POST['interests']))
         $errors['interests'] = 'Extracurriculars is required.';
     if (empty($_POST['hopes']))
@@ -67,7 +71,7 @@
 
     if (empty($errors)) {
 
-            // Variables from the form 
+            // Variables from the form
             $firstName          = $_POST['firstName'];
             $lastName           = $_POST['lastName'];
             $nickName           = $_POST['nickName'];
@@ -91,6 +95,8 @@
             $departEarly        = $_POST['departEarly'];
             $tour1              = $_POST['tour1'];
             $tour2              = $_POST['tour2'];
+            $activity1          = $_POST['activity1'];
+            $activity2          = $_POST['activity2'];
             $interests          = $_POST['interests'];
             $hopes              = $_POST['hopes'];
 
@@ -118,6 +124,8 @@
             $departEarly        = mysqli_real_escape_string($connect_site, stripslashes($departEarly));
             $tour1              = mysqli_real_escape_string($connect_site, stripslashes($tour1));
             $tour2              = mysqli_real_escape_string($connect_site, stripslashes($tour2));
+            $activity1          = mysqli_real_escape_string($connect_site, stripslashes($activity1));
+            $activity2          = mysqli_real_escape_string($connect_site, stripslashes($activity2));
             $interests          = mysqli_real_escape_string($connect_site, stripslashes($interests));
             $hopes              = mysqli_real_escape_string($connect_site, stripslashes($hopes));
 
@@ -137,8 +145,8 @@
             if($participants_query->num_rows < $MAX_PARTICIPANTS) {
 
                 // Insert participant into regular table
-                $post_query = mysqli_query($connect_site,"INSERT INTO participants (firstName, lastName, nickName, email, phone, gender, shirtSize, major, healthIssues, street, street2, city, state, postalCode, parentName, parentDayPhone, parentNightPhone, secondaryName, secondaryPhone, arrival, departEarly, tour1, tour2, interests, expectToGain, ip) VALUES ('$firstName', '$lastName', '$nickName', '$email', '$phone', '$gender','$shirt', '$major', '$health', '$street', '$street2', '$city', '$state', '$zip', '$parentName', '$parentDayPhone', '$parentNightPhone', '$secondaryName','$secondaryPhone', '$arrival', '$departEarly', '$tour1', '$tour2','$interests', '$hopes', '$ip') ") or die("Unable to insert participant. " . mysqli_error($connect_site));
-                
+                $post_query = mysqli_query($connect_site,"INSERT INTO participants (firstName, lastName, nickName, email, phone, gender, shirtSize, major, healthIssues, street, street2, city, state, postalCode, parentName, parentDayPhone, parentNightPhone, secondaryName, secondaryPhone, arrival, departEarly, tour1, tour2, activity1, activity2, interests, expectToGain, ip) VALUES ('$firstName', '$lastName', '$nickName', '$email', '$phone', '$gender','$shirt', '$major', '$health', '$street', '$street2', '$city', '$state', '$zip', '$parentName', '$parentDayPhone', '$parentNightPhone', '$secondaryName','$secondaryPhone', '$arrival', '$departEarly', '$tour1', '$tour2', '$activity1', '$activity2','$interests', '$hopes', '$ip') ") or die("Unable to insert participant. " . mysqli_error($connect_site));
+
                 $data['success'] = true;
                 $data['message'] = 'Participant added successfully.';
 
@@ -166,8 +174,8 @@
             }
             else {
                 // Insert participant into waiting list table
-                $post_query = mysqli_query($connect_site,"INSERT INTO waitlist (firstName, lastName, nickName, email, phone, gender, shirtSize, major, healthIssues, street, street2, city, state, postalCode, parentName, parentDayPhone, parentNightPhone, secondaryName, secondaryPhone, arrival, departEarly, tour1, tour2, interests, expectToGain, ip) VALUES ('$firstName', '$lastName', '$nickName', '$email', '$phone', '$gender','$shirt', '$major', '$health', '$street', '$street2', '$city', '$state', '$zip', '$parentName', '$parentDayPhone', '$parentNightPhone', '$secondaryName','$secondaryPhone', '$arrival', '$departEarly', '$tour1', '$tour2','$interests', '$hopes', '$ip') ") or die("Unable to insert participant. " . mysqli_error($connect_site));
-                
+                $post_query = mysqli_query($connect_site,"INSERT INTO waitlist (firstName, lastName, nickName, email, phone, gender, shirtSize, major, healthIssues, street, street2, city, state, postalCode, parentName, parentDayPhone, parentNightPhone, secondaryName, secondaryPhone, arrival, departEarly, tour1, tour2, activity1, activity2, interests, expectToGain, ip) VALUES ('$firstName', '$lastName', '$nickName', '$email', '$phone', '$gender','$shirt', '$major', '$health', '$street', '$street2', '$city', '$state', '$zip', '$parentName', '$parentDayPhone', '$parentNightPhone', '$secondaryName','$secondaryPhone', '$arrival', '$departEarly', '$tour1', '$tour2', '$activity1', '$activity2', '$interests', '$hopes', '$ip') ") or die("Unable to insert participant. " . mysqli_error($connect_site));
+
                 $data['success'] = true;
                 $data['message'] = "Participant added to waiting list.";
 
@@ -188,11 +196,11 @@
             }
 
             // Send confirmation email to participant
-            if(!$participantMail->send()) 
+            if(!$participantMail->send())
             {
                 $errors['email'] = "Mailer Error: " . $participantMail->ErrorInfo . " Please contact " . $WEBMASTER[1] . ".";
-            } 
-            else 
+            }
+            else
             {
                  $data['message'] .= " Thank you! A confirmation email has been sent to your email address.";
             }
@@ -211,11 +219,11 @@
                 Name: " . $firstName . " " . $lastName  . "<br>
                 Email: " . $email . "<br>
                 IP Address: " . $ip . "
-                <br><br>" . 
+                <br><br>" .
                 json_encode($_POST) . "
-                <br><br><br> 
+                <br><br><br>
                 SITE Committee<br>Engineering Council<br>University of Illinois at Urbana-Champaign";
-            if(!$partWebMail->send()) 
+            if(!$partWebMail->send())
             {
                 echo "Mailer Error: " . $partWebMail->ErrorInfo . " Please contact " . $WEBMASTER[1] . ".";
             }

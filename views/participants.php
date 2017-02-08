@@ -261,6 +261,34 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-sm-5">
+                    <div class="form-group form-group-lg">
+                        <select class="form-control" name="activity1" id="activity1" value="">
+                            <option value="" selected disabled>1st Activity Preference</option>
+                            <option value="Dessert">Walking through Campustown and grabbing dessert</option>
+                            <option value="Spectate">Watching a sporting event</option>
+                            <option value="Observatory">Visiting the observatory in the evening</option>
+                            <option value="ArcSports">Playing sports at the ARC recreation center</option>
+                            <option value="CrceSwimming">Going swimming in the CRCE recreation center</option>
+                            <option value="StayingIn">Staying in, enjoying a movie or playing video/board games</option>
+                            <option value="LiveShow">Seeing a live performance or live music</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group form-group-lg">
+                        <select class="form-control" name="activity2" id="activity2" value="">
+                            <option value="" selected disabled>1st Activity Preference</option>
+                            <option value="Dessert">Walking through Campustown and grabbing dessert</option>
+                            <option value="Spectate">Watching a sporting event</option>
+                            <option value="Observatory">Visiting the observatory in the evening</option>
+                            <option value="ArcSports">Playing sports at the ARC recreation center</option>
+                            <option value="CrceSwimming">Going swimming in the CRCE recreation center</option>
+                            <option value="StayingIn">Staying in, enjoying a movie or playing video/board games</option>
+                            <option value="LiveShow">Seeing a live performance or live music</option>
+                        </select>
+                    </div>
+                </div>
                 <div class="col-sm-8">
                     <div class="form-group form-group-lg">
                        <textarea class="form-control" name="interests" id="interests" value="" placeholder="List your extracurriculars, hobbies, and anything else we should know about you." rows="6"></textarea>

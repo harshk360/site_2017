@@ -48,6 +48,8 @@
                 <!--21--><th>Major</th>
                 <!--22--><th>Tour 1</th>
                 <!--23--><th>Tour 2</th>
+                <!--22--><th>Activity 1</th>
+                <!--23--><th>Activity 2</th>
                 <!--24--><th>Interests</th>
                 <!--25--><th>Want From SITE</th>
                 </tr></thead>
@@ -84,6 +86,8 @@
                     <td><? echo $pRow['major']; ?></td>
                     <td><? echo $pRow['tour1']; ?></td>
                     <td><? echo $pRow['tour2']; ?></td>
+                    <td><? echo $pRow['activity1']; ?></td>
+                    <td><? echo $pRow['activity2']; ?></td>
                     <td><? echo $pRow['interests']; ?></td>
                     <td><? echo $pRow['expectToGain']; ?></td>
                     </tr>
@@ -121,6 +125,8 @@
                 <!--21--><th>Major</th>
                 <!--22--><th>Tour 1</th>
                 <!--23--><th>Tour 2</th>
+                <!--22--><th>Activity 1</th>
+                <!--23--><th>Activity 2</th>
                 <!--24--><th>Interests</th>
                 <!--25--><th>Want From SITE</th>
                 <!--26--><th>Submitted</th>
@@ -158,6 +164,8 @@
                     <td><? echo $wRow['major']; ?></td>
                     <td><? echo $wRow['tour1']; ?></td>
                     <td><? echo $wRow['tour2']; ?></td>
+                    <td><? echo $wRow['activity1']; ?></td>
+                    <td><? echo $wRow['activity2']; ?></td>
                     <td><? echo $wRow['interests']; ?></td>
                     <td><? echo $wRow['expectToGain']; ?></td>
                     <td><? echo $wRow['creationDate']; ?></td>
