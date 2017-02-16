@@ -7,7 +7,7 @@ $SITE_FEE = "$135";
 $SITE_FEEDATE = array("March", "31");
 $SITE_CLOSEDATE = array("March", "18");
 $MAX_PARTICIPANTS = 95;
-$PARTICIPANT_SIGNUPS_OPEN = true;
+$PARTICIPANT_SIGNUPS_OPEN = false;
 $VOLUNTEER_SIGNUPS_OPEN = true;
 
 $DIRECTOR = array("Omar Joya","joya2@illinois.edu");

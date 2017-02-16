@@ -313,7 +313,8 @@
     else { ?>
                     <h2>Participant <span class="highlight">Sign Up</span></h2>
                     <hr>
-                    <h3>Registration for SITE <?echo $SITE_YEAR; ?> is closed. Please visit <a href="http://eib.ec.illinois.edu/" target="_blank">Engineering Council's EIB</a> if you are still interested in visiting campus.</h3>
+                    <h3>Registration for SITE <?echo $SITE_YEAR; ?> will open on Wednesday, 2/22, at 7pm CT.</h3>
+                    <!--<h3>Registration for SITE <?echo $SITE_YEAR; ?> is closed. Please visit <a href="http://eib.ec.illinois.edu/" target="_blank">Engineering Council's EIB</a> if you are still interested in visiting campus.</h3>-->
 <?  }?>
         </div>
     </section>
