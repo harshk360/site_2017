@@ -19,7 +19,7 @@
 
 <?
 
-    $participants_query = mysqli_query($connect_site, "SELECT * FROM participants")
+    $participants_query = mysqli_query($connect_site, "SELECT * FROM participants where deleted != 1")
                     or die("Can not query the TABLE! " . mysqli_error($connect_site));
 
 ?>

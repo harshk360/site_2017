@@ -11,7 +11,7 @@
                     </div>
                     <div class="footer-col col-sm-6">
                         <h3><a>Contact</a></h3>
-                        <p>site@ec.illinois.edu<br>217.244.3828 <a href="http://www.ec.illinois.edu/res/about_ec.php" target="_blank">Engineering Council</a><br>217.333.2151 <a href="http://engineering.illinois.edu/" target="_blank">College of Engineering</a></p>
+                        <p>site@ec.illinois.edu<br>217.244.3828 <a href="http://www.ec.illinois.edu/res/about_ec.php" target="_blank">Engineering Council</a><br>843.732.8482 <a href="http://engineering.illinois.edu/" target="_blank">College of Engineering</a></p>
                     </div>
                 </div>
             </div>

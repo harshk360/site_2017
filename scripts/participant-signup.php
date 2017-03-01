@@ -139,7 +139,7 @@
             $participantMail->isHTML(true);
 
 
-            $participants_query = mysqli_query($connect_site, "SELECT * FROM participants")
+            $participants_query = mysqli_query($connect_site, "SELECT * FROM participants where deleted != 1")
                     or die("Can not query the TABLE! " . mysqli_error($connect_site));
 
             if($participants_query->num_rows < $MAX_PARTICIPANTS) {
@@ -202,7 +202,7 @@
             }
             else
             {
-                 $data['message'] .= " Thank you! A confirmation email has been sent to your email address.";
+                 $data['message'] .= " Thank you! A confirmation email has been sent to your email address. Make sure to check your spam folder if you don't see it in your inbox.";
             }
 
             // Send record to webmaster (no API to remove address)
